@@ -1,5 +1,3 @@
-"use strict";
-
 Array.prototype.mapFunc = function (callback, thisArg = undefined) {
   if (this === null || typeof callback !== "function") {
     throw new TypeError();
@@ -20,6 +18,3 @@ Array.prototype.mapFunc = function (callback, thisArg = undefined) {
 
   return result;
 };
-
-const error1 = [2, 4, 6].mapFunc("hi");
-console.log(error1);
